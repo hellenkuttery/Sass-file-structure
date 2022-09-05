@@ -1,0 +1,31 @@
+// -----NAVBAR ----- 
+
+.nav{
+    padding:1rem;
+
+    // Height 10 vh orta kısma 80vh footer a 10vh ver 
+
+    height:10vh;
+    &__list{
+        text-align: right;
+
+    }
+    &__item{
+        display: inline;
+        padding:1rem;
+    }
+    &__link{
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1rem;
+        &:hover{
+            color:blue;
+
+        }
+        &--active{
+            color: $secondary-color;
+        }
+    }
+   
+   
+}
