@@ -18,6 +18,12 @@
         text-transform: uppercase;
         font-weight: 500;
         font-size: 1rem;
+
+        //FOnt family önce yaz sonra variables tanımla buraya al
+        font-family: $font-family;
+        //Transition linkte hover yavaş olsun
+        // transition: all 1s;
+        @include transition(1s);
         &:hover{
             color:blue;
 

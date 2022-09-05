@@ -1,0 +1,33 @@
+
+// ---------HOME---------
+
+
+.home-bgImg-container{
+    // border:2px solid red;
+// önce bu şekilde tanımla sonra mixintanımla hatta urli değişken tanımla
+     // background-image: url("../../images/model-1.jpg");
+    //bu fotograf heryerde kullanılacak o nedenle mixin tanımlanacak
+   
+
+    @include  bgImage(100vh,$main-bgImage-path)
+}
+
+.home{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__name{
+        font-size: 5rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #fff;
+    
+        &--last{
+            color: red;
+            font-weight: 700;
+        }
+}
+}
